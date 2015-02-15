@@ -89,7 +89,7 @@ Find 5-minute interval, on average across all the days in the dataset, contains 
 interval_max <- average_per_day[which.max(average_per_day[,2]), "interval"]
 ```
 
-Maximum interval is **835**.
+Interval id with maximum value is **835**.
 
 ## Imputing missing values
 
@@ -105,7 +105,7 @@ sum(is.na(data[, "steps"]))
 ## [1] 2304
 ```
 
-Fill missing data with the mean for that 5-minute interval
+Fill missing data with the mean value of appropriate 5-minute interval
 
 
 ```r

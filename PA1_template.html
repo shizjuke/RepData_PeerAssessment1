@@ -277,7 +277,7 @@ plot(average_per_day$interval, average_per_day$mean, type=&quot;l&quot;, ylab = 
 interval_max &lt;- average_per_day[which.max(average_per_day[,2]), &quot;interval&quot;]
 </code></pre>
 
-<p>Maximum interval is <strong>835</strong>.</p>
+<p>Interval id with maximum value is <strong>835</strong>.</p>
 
 <h2>Imputing missing values</h2>
 
@@ -290,7 +290,7 @@ sum(is.na(data[, &quot;steps&quot;]))
 <pre><code>## [1] 2304
 </code></pre>
 
-<p>Fill missing data with the mean for that 5-minute interval</p>
+<p>Fill missing data with the mean value of appropriate 5-minute interval</p>
 
 <pre><code class="r"># copy dataset
 filled_data &lt;- data
